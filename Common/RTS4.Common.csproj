@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A22B780E-4A5E-4C96-AE6E-27A1718BE728}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{4FD44ADD-59E6-42D2-8334-B371EC49DD90}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XScriptValidityCheck</RootNamespace>
-    <AssemblyName>XScriptValidityCheck</AssemblyName>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,9 +30,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,32 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="XColor.cs" />
+    <Compile Include="Math\XMatrix.cs" />
+    <Compile Include="Math\XReal.cs" />
+    <Compile Include="Math\XRectangleF.cs" />
+    <Compile Include="Math\XRectangle.cs" />
+    <Compile Include="Math\XPoint3.cs" />
+    <Compile Include="Math\XPoint2.cs" />
+    <Compile Include="Math\XVector3.cs" />
+    <Compile Include="Math\XVector2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\RTS4.Common.csproj">
-      <Project>{4FD44ADD-59E6-42D2-8334-B371EC49DD90}</Project>
-      <Name>RTS4.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Environment\RTS4.Environment.csproj">
-      <Project>{46037F01-73A8-4D41-B59B-B72B441555DA}</Project>
-      <Name>RTS4.Environment</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\XScript\XScript.csproj">
-      <Project>{ff9fc44d-0fb5-49c2-88cc-6fad56479206}</Project>
-      <Name>XScript</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="terraintypes.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="constants.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

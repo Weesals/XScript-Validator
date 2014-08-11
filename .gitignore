@@ -1,4 +1,8 @@
 *.suo
+Common/bin/
+Common/obj/
+Environment/bin/
+Environment/obj/
 XScript/bin/
 XScript/obj/
 XScriptValidityCheck/bin/

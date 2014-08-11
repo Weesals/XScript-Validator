@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A22B780E-4A5E-4C96-AE6E-27A1718BE728}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{46037F01-73A8-4D41-B59B-B72B441555DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XScriptValidityCheck</RootNamespace>
-    <AssemblyName>XScriptValidityCheck</AssemblyName>
+    <RootNamespace>RTS4.Environment</RootNamespace>
+    <AssemblyName>Environment</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,9 +30,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,33 +40,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Entities\Components\CAnchor.cs" />
+    <Compile Include="Entities\Components\CFootprint.cs" />
+    <Compile Include="Entities\Components\CModel.cs" />
+    <Compile Include="Entities\Components\ComponentReference.cs" />
+    <Compile Include="Entities\Components\CSelectable.cs" />
+    <Compile Include="Entities\Components\CSquareFootprint.cs" />
+    <Compile Include="Entities\Components\CTransform.cs" />
+    <Compile Include="Entities\Components\XComponent.cs" />
+    <Compile Include="Entities\Flag.cs" />
+    <Compile Include="Entities\InteractionContext.cs" />
+    <Compile Include="Entities\UnitPrototype.cs" />
+    <Compile Include="Research\Effect.cs" />
+    <Compile Include="Research\Technology.cs" />
+    <Compile Include="Resources\Content.cs" />
+    <Compile Include="Utility\Registry.cs" />
+    <Compile Include="Entities\Prefabs\Estartingsettlement.cs" />
+    <Compile Include="Entities\XEntity.cs" />
+    <Compile Include="Resources\XModel.cs" />
+    <Compile Include="SimplexNoise.cs" />
+    <Compile Include="Simulation.cs" />
+    <Compile Include="Terrain.cs" />
+    <Compile Include="TerrainType.cs" />
+    <Compile Include="Utility\IIdentificationNumber.cs" />
+    <Compile Include="WaterType.cs" />
+    <Compile Include="World.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XScript\RMS\RMArea.cs" />
+    <Compile Include="XScript\RMS\RMAreaMap.cs" />
+    <Compile Include="XScript\RMS\RMClass.cs" />
+    <Compile Include="XScript\RMS\RMConstraint.cs" />
+    <Compile Include="XScript\RMS\RMInflueceMap.cs" />
+    <Compile Include="XScript\RMS\RMObjectDefinition.cs" />
+    <Compile Include="XScript\RMS\RMPlayer.cs" />
+    <Compile Include="XScript\RMS\RMPolygon.cs" />
+    <Compile Include="XScript\RMS\RMResource.cs" />
+    <Compile Include="XScript\RMS\XArea.cs" />
+    <Compile Include="XScript\RMS\XLogging.cs" />
+    <Compile Include="XScript\RMS\XMath.cs" />
+    <Compile Include="XScript\RMS\XRandomMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\RTS4.Common.csproj">
       <Project>{4FD44ADD-59E6-42D2-8334-B371EC49DD90}</Project>
       <Name>RTS4.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Environment\RTS4.Environment.csproj">
-      <Project>{46037F01-73A8-4D41-B59B-B72B441555DA}</Project>
-      <Name>RTS4.Environment</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\XScript\XScript.csproj">
-      <Project>{ff9fc44d-0fb5-49c2-88cc-6fad56479206}</Project>
-      <Name>XScript</Name>
-    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="terraintypes.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="constants.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
