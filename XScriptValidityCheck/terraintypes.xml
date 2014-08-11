@@ -1,0 +1,29 @@
+<terraintypes>
+  <!--
+  Note this file is missing all actual terrain types,
+  these are currently in TerrainType.cs, will be moved
+  into here later
+  -->
+  <!-- sea types -->
+  <type name="Aegean Sea" colour="128, 128, 255" />
+  <type name="Egyptian Nile" colour="128, 128, 255" />
+  <type name="Egyptian Nile Shallow" colour="128, 128, 255, 64" />
+  <type name="Greek River" colour="0, 0, 255" />
+  <type name="Marsh Pool" colour="64, 64, 255" />
+  <type name="Mediterranean Sea" colour="0, 0, 255" />
+  <type name="Norse River" colour="0, 0, 255" />
+  <type name="North Atlantic Ocean" colour="0, 0, 255" />
+  <type name="Norwegian Sea" colour="0, 0, 255" />
+  <type name="Red Sea" colour="0, 0, 255" />
+  <type name="Savannah Water Hole" colour="0, 0, 255" />
+  <type name="Styx River" colour="0, 0, 255" />
+  <type name="Tundra" colour="0, 0, 255" />
+  <type name="Tundra Pool" colour="0, 0, 255" />
+  <type name="Watering Hole" colour="0, 0, 255" />
+  <!-- cliff types -->
+  <type name="Greek Cliff" colour="128, 128, 128" />
+  <type name="Egyptian Cliff" colour="160, 128, 128" />
+  <type name="Greek Rock Cliff" colour="128, 128, 160" />
+  <type name="Hades Cliff" colour="64, 64, 64" />
+  <type name="Norse Cliff" colour="160, 160, 160" />
+</terraintypes>

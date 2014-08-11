@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XScriptValidityCheck", "XScriptValidityCheck\XScriptValidityCheck.csproj", "{A22B780E-4A5E-4C96-AE6E-27A1718BE728}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTS4.Common", "Common\RTS4.Common.csproj", "{4FD44ADD-59E6-42D2-8334-B371EC49DD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTS4.Environment", "Environment\RTS4.Environment.csproj", "{46037F01-73A8-4D41-B59B-B72B441555DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XScript", "XScript\XScript.csproj", "{FF9FC44D-0FB5-49C2-88CC-6FAD56479206}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A22B780E-4A5E-4C96-AE6E-27A1718BE728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22B780E-4A5E-4C96-AE6E-27A1718BE728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22B780E-4A5E-4C96-AE6E-27A1718BE728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22B780E-4A5E-4C96-AE6E-27A1718BE728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD44ADD-59E6-42D2-8334-B371EC49DD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD44ADD-59E6-42D2-8334-B371EC49DD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD44ADD-59E6-42D2-8334-B371EC49DD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD44ADD-59E6-42D2-8334-B371EC49DD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46037F01-73A8-4D41-B59B-B72B441555DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46037F01-73A8-4D41-B59B-B72B441555DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46037F01-73A8-4D41-B59B-B72B441555DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46037F01-73A8-4D41-B59B-B72B441555DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9FC44D-0FB5-49C2-88CC-6FAD56479206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9FC44D-0FB5-49C2-88CC-6FAD56479206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9FC44D-0FB5-49C2-88CC-6FAD56479206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9FC44D-0FB5-49C2-88CC-6FAD56479206}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

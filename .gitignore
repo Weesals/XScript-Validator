@@ -1,0 +1,6 @@
+*.suo
+XScript/bin/
+XScript/obj/
+XScriptValidityCheck/bin/
+XScriptValidityCheck/obj/
+*.user
